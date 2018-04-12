@@ -32,7 +32,7 @@ module.exports.socket = function(http) {
     io
         .use(passportSocketIo.authorize({
             cookieParser: cookieParser, // the same middleware you registrer in express
-            key: 'express.sid', // the name of the cookie where express/connect stores its session_id
+            key: 'connect.sid', // the name of the cookie where express/connect stores its session_id
             secret: 'ertfjnsmchgshoff', // the session_secret to parse the cookie
             store: new MongoStore(options), //   using a sessionstore. 
 
@@ -72,6 +72,28 @@ module.exports.socket = function(http) {
                         io.emit('userList', { OnlineUsers: users, AllUsers: AllUsers });
                     });
 
+
+                } else {
+                    socket.userName = data;
+                    socket.emit('userSet', { userName: data });
+                    //message when a user joins
+
+                    socket.broadcast.emit('userJoined', socket.userName);
+                    eventsEmitter.on('all-users', function(allUsers) {
+                        AllUsers = allUsers;
+
+                        //Setting up user's online/offline status
+                        AllUsers.forEach(function(user) {
+                            if (users.indexOf(user.username) < 0) {
+
+                                user.status = false;
+                            } else {
+                                user.status = true;
+                            }
+                        });
+
+                        io.emit('userList', { OnlineUsers: users, AllUsers: AllUsers });
+                    });
 
                 }
             });

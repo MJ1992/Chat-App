@@ -225,16 +225,6 @@ module.exports.controller = function(app) {
             }
         });
     });
-
-    //auth from google 
-    router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-
-    //Handling callback from google
-    router.get('/auth/google/cb', passport.authenticate('google', {
-        successRedirect: '/',
-        failureRedirect: '/'
-    }));
-
     app.use('/', router);
 
 };

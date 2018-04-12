@@ -10,8 +10,7 @@ var express = require("express"),
     session = require('express-session'),
     flash = require('connect-flash'),
     http = require('http').Server(app),
-    fs = require('fs'),
-    io = require('socket.io')(http);
+    fs = require('fs');
 
 
 
@@ -51,7 +50,7 @@ var options = {
 
 app.use(session({
     secret: 'ertfjnsmchgshoff',
-    key: 'express.sid',
+    key: 'connect.sid',
     store: new MongoStore(options),
     cookie: { secure: false, maxAge: 86400000 },
     resave: false,
