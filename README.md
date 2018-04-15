@@ -1,16 +1,16 @@
 # Chat-app
  A simple one-to-one chat application using socket.io,Node,ExpressJS and MongoDB
  
- Deployed on url : ec2-18-217-210-184.us-east-2.compute.amazonaws.com 
+ Deployed on url : ec2-18-217-210-184.us-east-2.compute.amazonaws.com
  
 ## Technologies used
-Node.js
-ExpressJS
-MongoDB - To save User Info and Chat History
-EJS - Server Side Rendering Template
-Socket.io - For Websockets and real time communication
-Deployed on AWS EC2 Instance
-NGINX Web server 
+- Node.js
+- ExpressJS
+- MongoDB - To save User Info and Chat History
+- EJS - Server Side Rendering Template
+- Socket.io - For Websockets and real time communication
+- Deployed on AWS EC2 Instance
+- NGINX Web server 
 
 
 ## Steps to use App in browser
@@ -28,11 +28,11 @@ NGINX Web server
 
 #### Pre-requisite
 
-NodeJS is installed on your machine
-MongoDB is installed on your machine
+- NodeJS is installed on your machine.
+- MongoDB is installed on your machine.
 
 ## Steps to run app 
-1. Run mongo daemon using mongod command in mongoDB/bin directory
+1.  Run mongo daemon using `mongod` command in mongoDB/bin directory
 2. Download the repo into your local machine
 3. In Terminal,go into project's directory and run command npm install
 4. After all project dependencies are downloaded Run command `Node app.js`
