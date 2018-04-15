@@ -31,7 +31,7 @@
 - NodeJS is installed on your machine.
 - MongoDB is installed on your machine.
 
-## Steps to run app 
+### Steps to run and use app on local machine
 1. Run mongo daemon using `mongod` command in mongoDB/bin directory
 2. Download the repo into your local machine
 3. In Terminal,go into project's directory and run command npm install
