@@ -41,6 +41,6 @@
 7. Login if you already have login creadentials otherwise click on sign up /register here link on login page
 8. Register with user name,password and email and click on sign up
 9. After login/Registering into app,user will be redirected to home page where all the other registered users will be shown with their      online status
-10.Click on the user to start the chat or see the chat history with that user (scrollup to see user chat history)
-11.Click on Logout button to exit the app
+10. Click on the user to start the chat or see the chat history with that user (scrollup to see user chat history)
+11. Click on Logout button to exit the app
 
