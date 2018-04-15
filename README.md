@@ -3,7 +3,7 @@
  
  Deployed on url : ec2-18-217-210-184.us-east-2.compute.amazonaws.com 
  
-##Technologies used
+## Technologies used
 Node.js
 ExpressJS
 MongoDB - To save User Info and Chat History
@@ -13,7 +13,7 @@ Deployed on AWS EC2 Instance
 NGINX Web server 
 
 
-##Steps to use App in browser
+## Steps to use App in browser
 1. Go to url : `ec2-18-217-210-184.us-east-2.compute.amazonaws.com`
 2. User has to login to use the app so user wil be redirect to `ec2-18-217-210-184.us-east-2.compute.amazonaws.com/login` page.
 3. Login if you already have login creadentials otherwise click on sign up /register here link on login page
@@ -24,14 +24,14 @@ NGINX Web server
 
 
 
-##Steps to use app on local machine
+## Steps to use app on local machine
 
-####Pre-requisite
+#### Pre-requisite
 
 NodeJS is installed on your machine
 MongoDB is installed on your machine
 
-##Steps to run app 
+## Steps to run app 
 1. Run mongo daemon using mongod command in mongoDB/bin directory
 2. Download the repo into your local machine
 3. In Terminal,go into project's directory and run command npm install
