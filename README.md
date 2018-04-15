@@ -37,4 +37,10 @@
 3. In Terminal,go into project's directory and run command npm install
 4. After all project dependencies are downloaded Run command `Node app.js`
 5. In browser go to url `localhost:3000` to access the app.
+6. User has to login to use the app so user wil be redirected to localhost:3000/login page.
+7. Login if you already have login creadentials otherwise click on sign up /register here link on login page
+8. Register with user name,password and email and click on sign up
+9. After login/Registering into app,user will be redirected to home page where all the other registered users will be shown with their      online status
+10.Click on the user to start the chat or see the chat history with that user (scrollup to see user chat history)
+11.Click on Logout button to exit the app
 
